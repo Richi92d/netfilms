@@ -5,15 +5,14 @@ import { FilmsRoutingModule } from './films-routing.module';
 import { PageListComponent } from './component/page-list/page-list.component';
 import { PageFilmComponent } from './component/page-film/page-film.component';
 
-
 @NgModule({
   declarations: [
     PageListComponent,
-    PageFilmComponent
+    PageFilmComponent,
   ],
   imports: [
     CommonModule,
-    FilmsRoutingModule
+    FilmsRoutingModule,
   ]
 })
 export class FilmsModule { }

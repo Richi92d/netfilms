@@ -1,0 +1,28 @@
+{
+  "movies": [
+    {
+      "id": 1,
+      "title": "Film 1",
+      "rating": 2,
+      "releaseDate": "12/02/2010"
+    },
+    {
+      "id": 2,
+      "title": "Film 2",
+      "rating": 1.5,
+      "releaseDate": "02/11/2022"
+    },
+    {
+      "id": 3,
+      "title": "Film 3",
+      "rating": 2,
+      "releaseDate": "12/02/2010"
+    },
+    {
+      "id": 4,
+      "title": "Film 4",
+      "rating": 1.5,
+      "releaseDate": "02/11/2022"
+    }
+  ]
+}
