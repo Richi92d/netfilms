@@ -2,27 +2,31 @@
   "movies": [
     {
       "id": 1,
-      "title": "Film 1",
+      "title": "Smile",
       "rating": 2,
-      "releaseDate": "12/02/2010"
+      "releaseDate": "12/02/2010",
+      "img": "assets/img/film.jpg"
     },
     {
       "id": 2,
       "title": "Film 2",
       "rating": 1.5,
-      "releaseDate": "02/11/2022"
+      "releaseDate": "02/11/2022",
+      "img": ""
     },
     {
       "id": 3,
       "title": "Film 3",
       "rating": 2,
-      "releaseDate": "12/02/2010"
+      "releaseDate": "12/02/2010",
+      "img": ""
     },
     {
       "id": 4,
       "title": "Film 4",
       "rating": 1.5,
-      "releaseDate": "02/11/2022"
+      "releaseDate": "02/11/2022",
+      "img": ""
     }
   ]
 }

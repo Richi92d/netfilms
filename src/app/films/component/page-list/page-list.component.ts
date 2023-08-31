@@ -9,10 +9,13 @@ import { MovieListService } from '../../services/movie-list.service';
 })
 export class PageListComponent implements OnInit {
 
+  public data: any;
+
   constructor(private movieService: MovieListService) { }
 
   ngOnInit(): void {
     this.movieService.getAllMovies().subscribe((res: MovieListe) => {
+      this.data = res;
       console.log(res);
     });
   }
