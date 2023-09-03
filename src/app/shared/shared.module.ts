@@ -1,16 +1,23 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { TemplateHomeComponent } from './templates/template-home/template-home.component';
+import { TemplateListComponent } from './templates/template-list/template-list.component';
+import { MatButtonModule } from '@angular/material/button';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { TemplateSidenavComponent } from './template-sidenav/template-sidenav.component';
 
 @NgModule({
   declarations: [
-    TemplateHomeComponent
+    TemplateListComponent,
+    TemplateSidenavComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    MatButtonModule,
+    MatSidenavModule
   ],
   exports: [
-    TemplateHomeComponent
+    TemplateListComponent,
+    TemplateSidenavComponent
   ]
 })
 export class SharedModule { }
