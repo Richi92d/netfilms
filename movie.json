@@ -5,28 +5,80 @@
       "title": "Smile",
       "rating": 2,
       "releaseDate": "12/02/2010",
-      "img": "assets/img/film.jpg"
+      "img": "assets/img/film.jpg",
+      "favoris": true
     },
     {
       "id": 2,
-      "title": "Film 2",
+      "title": "Le voyage d'arlo",
       "rating": 1.5,
       "releaseDate": "02/11/2022",
-      "img": ""
+      "img": "assets/img/arlo.jpg",
+      "favoris": false
     },
     {
       "id": 3,
-      "title": "Film 3",
+      "title": "Avengers",
       "rating": 2,
       "releaseDate": "12/02/2010",
-      "img": ""
+      "img": "assets/img/avengers.jpeg",
+      "favoris": false
     },
     {
       "id": 4,
-      "title": "Film 4",
+      "title": "Barbie",
       "rating": 1.5,
       "releaseDate": "02/11/2022",
-      "img": ""
+      "img": "assets/img/barbie.jpeg",
+      "favoris": false
+    },
+    {
+      "id": 5,
+      "title": "One Piece",
+      "rating": 1.5,
+      "releaseDate": "02/11/2022",
+      "img": "assets/img/onepiece.jpg",
+      "favoris": false
+    },
+    {
+      "id": 6,
+      "title": "Pearl Harbor",
+      "rating": 1.5,
+      "releaseDate": "02/11/2022",
+      "img": "assets/img/pearl.jpg",
+      "favoris": false
+    },
+    {
+      "id": 7,
+      "title": "Joker",
+      "rating": 1.5,
+      "releaseDate": "02/11/2022",
+      "img": "assets/img/joker.jpg",
+      "favoris": false
+    },
+    {
+      "id": 8,
+      "title": "Pat Patrouille",
+      "rating": 1.5,
+      "releaseDate": "02/11/2022",
+      "img": "assets/img/pat.jpg",
+      "favoris": false
+    },
+    {
+      "id": 9,
+      "title": "Pirates des caraibes",
+      "rating": 1.5,
+      "releaseDate": "02/11/2022",
+      "img": "assets/img/pirate.jpg",
+      "favoris": false
+    },
+    {
+      "id": 10,
+      "title": "Titanic",
+      "rating": 1.5,
+      "releaseDate": "02/11/2022",
+      "img": "assets/img/titanic.jpg",
+      "favoris": false
     }
   ]
 }

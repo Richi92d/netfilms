@@ -4,4 +4,5 @@ export interface MovieListe {
     rating: number;
     releaseDate: Date;
     img: string;
+    favoris: boolean;
 }

@@ -1,4 +1,5 @@
-import { Component, Directive, OnInit } from '@angular/core';
+import { Component, Directive, OnDestroy, OnInit } from '@angular/core';
+import { Subscription } from 'rxjs';
 import { MovieListe } from '../../interfaces/movie-list';
 import { MovieListService } from '../../services/movie-list.service';
 
@@ -7,17 +8,22 @@ import { MovieListService } from '../../services/movie-list.service';
   templateUrl: './page-list.component.html',
   styleUrls: ['./page-list.component.scss']
 })
-export class PageListComponent implements OnInit {
+export class PageListComponent implements OnInit, OnDestroy {
 
-  public data: any;
+  public data: MovieListe[];
+  public unsubscribe: Subscription;
 
   constructor(private movieService: MovieListService) { }
 
   ngOnInit(): void {
-    this.movieService.getAllMovies().subscribe((res: MovieListe) => {
+    this.unsubscribe = this.movieService.getAllMovies().subscribe((res: MovieListe[]) => {
+      console.log(this.data);
       this.data = res;
-      console.log(res);
     });
+  }
+
+  ngOnDestroy(): void {
+    this.unsubscribe.unsubscribe();
   }
 
 }

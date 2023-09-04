@@ -1,15 +1,6 @@
 <div class="image-mosaic">
-    <div class="card">
-        <img src="/assets/img/film.jpg" class="img-style">
-    </div>
-    <div class="card">
-        <img src="/assets/img/film.jpg" class="img-style">
-    </div>
-    <div class="card">
-        <img src="/assets/img/film.jpg" class="img-style">
-    </div>
-    <div class="card">
-        <img src="/assets/img/film.jpg" class="img-style">
+    <div class="card" *ngFor="let film of films">
+        <img [src]="film.img" class="img-style">
     </div>
 </div>
 

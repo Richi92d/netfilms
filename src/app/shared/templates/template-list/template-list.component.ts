@@ -8,6 +8,10 @@ import { MovieListe } from 'src/app/films/interfaces/movie-list';
 })
 export class TemplateListComponent {
   showFiller = false;
-  @Input() public films: any;
+  @Input() public films: MovieListe[];
+
+  constructor() {
+    console.log(this.films);
+  }
 
 }

@@ -10,7 +10,7 @@ export class MovieListService {
 
   constructor(private http: HttpClient) { }
 
-  getAllMovies(): Observable<MovieListe> {
-    return this.http.get<MovieListe>('http://localhost:3000/movies');
+  getAllMovies(): Observable<MovieListe[]> {
+    return this.http.get<MovieListe[]>('http://localhost:3000/movies');
   }
 }
