@@ -3,7 +3,8 @@ import { CommonModule } from '@angular/common';
 import { TemplateListComponent } from './templates/template-list/template-list.component';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
-import { TemplateSidenavComponent } from './template-sidenav/template-sidenav.component';
+import { TemplateSidenavComponent } from './templates/template-sidenav/template-sidenav.component';
+import {MatIconModule} from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { TemplateSidenavComponent } from './template-sidenav/template-sidenav.co
   imports: [
     CommonModule,
     MatButtonModule,
-    MatSidenavModule
+    MatSidenavModule,
+    MatIconModule
   ],
   exports: [
     TemplateListComponent,

@@ -1,0 +1,32 @@
+.example-container {
+    width: fit-content;
+    height: 100vh;
+    position: absolute;
+    z-index: 1;
+    margin: 0;
+    padding: 0;
+}
+
+.example-sidenav-content {
+    display: flex;
+    height: 100vh;
+    color: white;
+    cursor: pointer;
+}
+
+.example-sidenav {
+    padding: 20px;
+    background-color: black;
+    color: white;
+}
+
+.icon {
+    position: fixed;
+    scroll-behavior: auto;
+    top: 50vh;
+    color: white;
+}
+
+.link {
+    cursor: pointer;
+}

@@ -1,0 +1,11 @@
+<mat-drawer-container class="example-container" autosize>
+    <mat-drawer #drawer class="example-sidenav" mode="side">
+        <p (click)="goToAccueil()" class="link">Accueil</p>
+        <p (click)="goToFavoris()" class="link">Favoris</p>
+    </mat-drawer>
+
+    <div class="example-sidenav-content" (click)="drawer.toggle()">
+        <mat-icon class="icon" *ngIf="drawer.opened">keyboard_arrow_left</mat-icon>
+        <mat-icon class="icon" *ngIf="!drawer.opened">keyboard_arrow_right</mat-icon>
+    </div>
+</mat-drawer-container>
