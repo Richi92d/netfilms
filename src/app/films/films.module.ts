@@ -5,11 +5,13 @@ import { FilmsRoutingModule } from './films-routing.module';
 import { PageListComponent } from './component/page-list/page-list.component';
 import { PageFilmComponent } from './component/page-film/page-film.component';
 import { SharedModule } from '../shared/shared.module';
+import { PageFavorisComponent } from './component/page-favoris/page-favoris.component';
 
 @NgModule({
   declarations: [
     PageListComponent,
     PageFilmComponent,
+    PageFavorisComponent,
   ],
   imports: [
     CommonModule,
