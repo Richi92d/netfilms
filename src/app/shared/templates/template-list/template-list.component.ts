@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { MovieListe } from 'src/app/films/interfaces/movie-list';
 
@@ -7,13 +7,15 @@ import { MovieListe } from 'src/app/films/interfaces/movie-list';
   templateUrl: './template-list.component.html',
   styleUrls: ['./template-list.component.scss']
 })
-export class TemplateListComponent {
+export class TemplateListComponent implements OnInit {
   @Input() public films: MovieListe[];
   @Output() public favoris = new EventEmitter();
 
   public isFavoris: boolean = false;
 
-  constructor(private snackBar: MatSnackBar) {}
+  constructor(private snackBar: MatSnackBar) { }
+
+  ngOnInit(): void {}
 
   addFavoris(favoris: MovieListe) {
     this.isFavoris = !this.isFavoris;
