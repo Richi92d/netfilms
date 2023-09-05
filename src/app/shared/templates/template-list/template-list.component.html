@@ -4,6 +4,7 @@
         <div class="icon-style">
 
             <mat-icon (click)="addFavoris(film)" [class.fav-icon-style]="film.favoris == true">favorite</mat-icon>
+            <div>{{ film.rating | average }}</div>
 
         </div>
     </div>

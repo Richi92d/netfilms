@@ -5,7 +5,7 @@ import { MovieListe } from 'src/app/films/interfaces/movie-list';
 @Component({
   selector: 'app-template-list',
   templateUrl: './template-list.component.html',
-  styleUrls: ['./template-list.component.scss']
+  styleUrls: ['./template-list.component.scss'],
 })
 export class TemplateListComponent {
   @Input() public films: MovieListe[];

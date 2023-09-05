@@ -24,6 +24,10 @@
     }
 
     .icon-style {
+        display: flex;
+        justify-content: space-between;
+        width: fit-content;
+        min-width: 5vw;
         margin-top: 5px;
         color: white;
     }

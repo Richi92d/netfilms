@@ -8,12 +8,14 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import { FormsModule } from '@angular/forms';
 import { AutocompletePipe } from './pipe/autocomplete.pipe';
+import { AveragePipe } from './pipe/average.pipe';
 
 @NgModule({
   declarations: [
     TemplateListComponent,
     TemplateSidenavComponent,
     AutocompletePipe,
+    AveragePipe,
   ],
   imports: [
     CommonModule,
