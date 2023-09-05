@@ -12,6 +12,7 @@ export class PageListComponent implements OnInit, OnDestroy {
 
   public data: MovieListe[];
   public unsubscribe: Subscription;
+  public searchText:string;
 
   constructor(private movieService: MovieListService) { }
 

@@ -6,6 +6,7 @@ import { PageListComponent } from './component/page-list/page-list.component';
 import { PageFilmComponent } from './component/page-film/page-film.component';
 import { SharedModule } from '../shared/shared.module';
 import { PageFavorisComponent } from './component/page-favoris/page-favoris.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { PageFavorisComponent } from './component/page-favoris/page-favoris.comp
   imports: [
     CommonModule,
     FilmsRoutingModule,
-    SharedModule
+    SharedModule,
+    FormsModule
   ]
 })
 export class FilmsModule { }

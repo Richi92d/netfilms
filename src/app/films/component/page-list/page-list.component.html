@@ -1,4 +1,8 @@
+<div class="align-right">
+    <input type="text" [(ngModel)]="searchText" placeholder="Enter text to search" class="input-style">
+</div>
+
 <div class="parent">
     <app-template-sidenav></app-template-sidenav>
-    <app-template-list [films]="data" (favoris)="addFavMovie($event)"></app-template-list>
+    <app-template-list [films]="data" (favoris)="addFavMovie($event)" [searchText]="searchText"></app-template-list>
 </div>

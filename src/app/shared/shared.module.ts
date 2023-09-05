@@ -6,22 +6,26 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { TemplateSidenavComponent } from './templates/template-sidenav/template-sidenav.component';
 import {MatIconModule} from '@angular/material/icon';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
+import { FormsModule } from '@angular/forms';
+import { AutocompletePipe } from './pipe/autocomplete.pipe';
 
 @NgModule({
   declarations: [
     TemplateListComponent,
-    TemplateSidenavComponent
+    TemplateSidenavComponent,
+    AutocompletePipe,
   ],
   imports: [
     CommonModule,
     MatButtonModule,
     MatSidenavModule,
     MatIconModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    FormsModule
   ],
   exports: [
     TemplateListComponent,
-    TemplateSidenavComponent
+    TemplateSidenavComponent,
   ]
 })
 export class SharedModule { }

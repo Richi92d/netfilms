@@ -1,15 +1,10 @@
 <div class="image-mosaic">
-    <div class="card" *ngFor="let film of films">
+    <div class="card" *ngFor="let film of films | autocomplete: searchText">
         <img [src]="film.img" class="img-style">
         <div class="icon-style">
 
-            <button mat-icon-button [class.fav-icon-style] = "film.favoris == true" (click)="addFavoris(film)">
-                <mat-icon>favorite</mat-icon>
-            </button>
+            <mat-icon (click)="addFavoris(film)" [class.fav-icon-style]="film.favoris == true">favorite</mat-icon>
 
-            <!-- <mat-icon>play_arrow</mat-icon>
-            <mat-icon>save_alt</mat-icon>
-            <mat-icon>share</mat-icon> -->
         </div>
     </div>
 </div>

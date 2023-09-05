@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { MovieListe } from 'src/app/films/interfaces/movie-list';
 
@@ -7,24 +7,28 @@ import { MovieListe } from 'src/app/films/interfaces/movie-list';
   templateUrl: './template-list.component.html',
   styleUrls: ['./template-list.component.scss']
 })
-export class TemplateListComponent implements OnInit {
+export class TemplateListComponent {
   @Input() public films: MovieListe[];
+  @Input() public searchText: string;
   @Output() public favoris = new EventEmitter();
 
   public isFavoris: boolean = false;
 
   constructor(private snackBar: MatSnackBar) { }
 
-  ngOnInit(): void {}
-
   addFavoris(favoris: MovieListe) {
     this.isFavoris = !this.isFavoris;
 
-    let t = { ...favoris };
-    t.favoris = this.isFavoris;
+    let isFavoriSelected = { ...favoris };
+    isFavoriSelected.favoris = this.isFavoris;
 
-    this.favoris.emit(t);
-    this.snackBar.open('Ajouté au favoris', 'close');
+    if (this.isFavoris) {
+      this.snackBar.open('Ce film à bien été ajouté au favori', 'close');
+    } else {
+      this.snackBar.open('Ce film a bien été supprimé des favoris', 'close');
+    }
+
+    this.favoris.emit(isFavoriSelected);
   }
 
 }
