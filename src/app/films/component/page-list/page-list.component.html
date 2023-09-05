@@ -1,4 +1,4 @@
 <div class="parent">
     <app-template-sidenav></app-template-sidenav>
-    <app-template-list [films]="data"></app-template-list>
+    <app-template-list [films]="data" (favoris)="addFavMovie($event)"></app-template-list>
 </div>

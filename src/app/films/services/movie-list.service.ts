@@ -13,4 +13,8 @@ export class MovieListService {
   getAllMovies(): Observable<MovieListe[]> {
     return this.http.get<MovieListe[]>('http://localhost:3000/movies');
   }
+
+  addFavoris(favoris: MovieListe): Observable<MovieListe> {
+    return this.http.patch<MovieListe>('http://localhost:3000/movies' + '/' + favoris.id, favoris)
+  }
 }

@@ -1,6 +1,15 @@
 <div class="image-mosaic">
     <div class="card" *ngFor="let film of films">
         <img [src]="film.img" class="img-style">
+        <div class="icon-style">
+
+            <button mat-icon-button [class.fav-icon-style] = "film.favoris == true" (click)="addFavoris(film)">
+                <mat-icon>favorite</mat-icon>
+            </button>
+
+            <!-- <mat-icon>play_arrow</mat-icon>
+            <mat-icon>save_alt</mat-icon>
+            <mat-icon>share</mat-icon> -->
+        </div>
     </div>
 </div>
-

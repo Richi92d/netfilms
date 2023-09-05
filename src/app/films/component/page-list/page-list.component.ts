@@ -1,4 +1,4 @@
-import { Component, Directive, OnDestroy, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { MovieListe } from '../../interfaces/movie-list';
 import { MovieListService } from '../../services/movie-list.service';
@@ -16,9 +16,18 @@ export class PageListComponent implements OnInit, OnDestroy {
   constructor(private movieService: MovieListService) { }
 
   ngOnInit(): void {
+    this.getMovies();
+  }
+
+  getMovies() {
     this.unsubscribe = this.movieService.getAllMovies().subscribe((res: MovieListe[]) => {
-      console.log(this.data);
       this.data = res;
+    });
+  }
+
+  addFavMovie(favoris: MovieListe) {
+    this.unsubscribe = this.movieService.addFavoris(favoris).subscribe((res: any) => {
+      this.getMovies();
     });
   }
 

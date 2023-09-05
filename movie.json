@@ -22,7 +22,7 @@
       "rating": 2,
       "releaseDate": "12/02/2010",
       "img": "assets/img/avengers.jpeg",
-      "favoris": false
+      "favoris": true
     },
     {
       "id": 4,
